@@ -1,0 +1,9 @@
+<div class="container p-3">
+  <h2 class="text-center"><%= @restaurant.name %></h2>
+  <p class="text-center"><%= @restaurant.address %>, <%= @restaurant.category %> Kitchen</p>
+  <p class="text-center"> <%= @restaurant.phone_number %>
+  <div class="text-center">
+  <%= link_to "See details", new_restaurant_review_path, class: "btn btn-primary"%>
+  <%= link_to "Back to restaurants", restaurants_path, class: "btn btn-warning" %>
+</div>
+</div>
